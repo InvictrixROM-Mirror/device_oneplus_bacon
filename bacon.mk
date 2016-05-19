@@ -286,5 +286,13 @@ PRODUCT_PACKAGES += \
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
 
+ifneq ($(QCPATH),)
+$(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
+endif
+
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
