@@ -19,12 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Enhanced NFC
-#$(call inherit-product, vendor/gzosp/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/invictus/config/nfc_enhanced.mk)
 
 # Inherit some common Gzosp stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/invictus/config/common_full_phone.mk)
 
-PRODUCT_NAME := gzosp_bacon
+PRODUCT_NAME := inv_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
@@ -40,6 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=oneplus/bacon/A0001:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys \
     PRIVATE_BUILD_DESC="bacon-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Prema Chand Alugu(premaca)"
