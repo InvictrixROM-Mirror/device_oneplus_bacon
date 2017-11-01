@@ -84,6 +84,26 @@ persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 
+#MODS
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+ro.ril.enable.amr.wideband=1
+ro.media.enc.jpeg.quality=100
+wifi.supplicant_scan_interval=120
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
+#ifdef VENDOR_EDIT
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.data.iwlan.enable=true
+persist.dbg.wfc_avail_ovr=1
+persist.radio.calls.on.ims=1
+#endif
+
 # Google assistant
 ro.opa.eligible_device=true
 
@@ -94,3 +114,6 @@ ro.device.gpu=Adreno 330
 ro.device.rear_cam=13MP
 ro.device.front_cam=5MP
 ro.device.screen_res=1080 x 1920
+
+#Invitrix Device Maintainers
+#ro.inv.maintainer=BlackScorpion3
